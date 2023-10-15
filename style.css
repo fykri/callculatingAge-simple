@@ -1,0 +1,214 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   background-color: #EFE1D1;
+}
+
+div.container {
+   background-color: #A78295;
+   max-width: 600px;
+   display: flex;
+   flex-direction: column;
+   margin: 150px auto;
+   border-radius: 10px ;
+   overflow: hidden;
+}
+
+h1 {
+   color: #EFE1D1;
+   background-color: #331D2C;
+   text-transform: uppercase;
+   text-align: center;
+   padding: 10px 0px;
+   opacity: 0.8;
+}
+
+form {
+   margin: 50px auto 0px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.input {
+   width: 250px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   box-sizing: border-box;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   font-size: 15px;
+   background-color: #331D2C;
+   opacity: 0.8;
+   justify-content: center;
+   flex-direction: column;
+}
+
+input[type = date] {
+   margin-left: 5px;
+   padding: 5px;
+   box-sizing: border-box;
+   border: 2px solid #331D2C;
+   border-radius: 5px;
+   text-align: center;
+   background-color: #EFE1D1;
+   color: #331D2C;
+}
+
+input[type = date]:focus {
+   outline: none;
+}
+
+input[type = date]::placeholder {
+   text-align: center;
+   color: #331D2C;
+   font-weight: normal;
+   opacity: 0.5;
+}
+
+div.input label {
+   color: white;
+   padding-bottom: 8px;
+}
+
+div.button{
+   width: 170px;
+   display: flex;
+   justify-content: space-evenly;
+   padding: 10px;
+   margin-bottom: 15px;
+}
+
+.button input[type = submit], input[type = reset] {
+   padding: 10px;
+   border-radius: 10px;
+   border: none;
+   box-sizing: border-box;
+   background-color: #331D2C;
+   color: white;
+   opacity: 0.8;
+   cursor: pointer;
+}
+
+.button input[type = submit]:hover, input[type = reset]:hover {
+   opacity: 1;
+}
+
+.result {
+   width: 300px;
+   height: 100px;
+   display: flex; 
+   justify-content: space-around; 
+   box-sizing: border-box;
+   align-items: center;
+}
+
+.result .card {
+   opacity: 0.8;
+   width: 80px;
+   height: 80px;
+   background-color: #331D2C;
+   border-radius: 10px;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+}
+
+.card h3 {
+   background-color: #EFE1D1;
+   text-align: center;
+   color: #331D2C;
+   font-size: 17px;
+   padding: 4px;
+   box-sizing: border-box;
+}
+
+.card .number {
+   font-size: 20px;
+   margin-top: 15px;
+   color: white;
+   margin: auto;
+}
+
+footer {
+   margin-top: 15px;
+   padding: 5px 5px;
+   border-radius: 10px 10px 0px 0px;
+   background-color: #EFE1D1;
+}
+
+footer p {
+   font-size: 12px;
+   color: black;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+
+   body {
+      background-color: #A78295;
+   }
+
+   div.container {
+      margin: 0px auto;
+      border-radius: 0px;
+   }
+
+   h1 {
+      width: 100%;
+      border-radius: 0px;
+      font-size: 40px;
+   }
+
+   .input {
+      margin-top: 50px;
+      width: 250px;
+      height: 150px;
+   }
+
+   .input label {
+      font-size: 20px;
+   }
+   
+   .input input[type = date] {
+      width: 200px;
+      height: 50px;
+      font-size: 15px;
+      margin-top: 5px;
+   }
+
+   footer {
+      position: absolute;
+      bottom: 0;
+   }
+
+   .button {
+      /* background-color: red; */
+      color: black;
+   }
+
+   .button input[type = submit], input[type = 'reset'] {
+      width: 270px;
+      height: 50px;
+      border: 5px solid #A78295;
+      font-size: 15px;
+   }
+
+   .result {
+      margin-top: 15px;
+      /* background-color: red; */
+      width: 350px
+   }
+
+   .result .card {
+      width: 90px;
+      height: 90px;
+   }
+   
+}
